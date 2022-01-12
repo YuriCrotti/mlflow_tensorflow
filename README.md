@@ -1,7 +1,4 @@
-# mlflow_tensorflow
-
 ## Managing ML-lifecycle with MLflow
-
 
 ### Installation 
 
@@ -13,18 +10,18 @@
     
     - **Optional**: you can create separate conda environment for this tutorial from environment file: 
         ```
-        conda env create -f conda.yaml
+        conda env create -f environment.yaml
         ```
         ```
-        conda activate mlflow-tutorial
+        conda activate mlflowtf
         ```
     - Installing requirements from requirements.txt file:
         ```
-        pip install -r requirements.txt -f https://download.pytorch.org/whl/torch_stable.html
+        pip install -r requirements.txt
         ```
 3. Launch Jupyter notebook from:
     ```
-    jupyter lab
+    jupyter notebook
     ```
     
 4. Launch MLflow server:
@@ -36,7 +33,6 @@
         - backend-store-uri - URI to which to persist experiment and run data (sqlite database in our case).
         - default-artifact-root - Local or S3 URI to store artifacts, for new experiments (local folder in our case). 
     
-    - **Hint**: you can launch MLflow server also from terminal. 
     
 5. Make sure that you can access mlflow server and jupyter notebook from your browser :
     - mlflow server   : http://localhost:5000/

@@ -38,3 +38,9 @@
     - mlflow server   : http://localhost:5000/
     - jupyter notebook: http://localhost:8888/ 
 
+
+6. Deploy local server (offline):
+    ```
+    # mlflow models serve -m {PATH_MODEL} -p 1234
+
+    ```
